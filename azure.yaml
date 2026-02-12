@@ -8,6 +8,7 @@ services:
     project: ./src
     language: js
     host: function
+    remoteBuild: true
 hooks:
   postprovision:
     windows:
@@ -20,4 +21,3 @@ hooks:
       run: ./infra/scripts/setuplocalenvironment.sh
       interactive: true
       continueOnError: false
-
